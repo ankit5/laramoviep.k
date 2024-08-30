@@ -463,9 +463,6 @@ width: 100% !important;
     padding-bottom: 9px !important;
     text-align: left !important;
     text-transform: capitalize !important;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 
@@ -500,6 +497,7 @@ width: 100% !important;
 .boxtitle {
     padding: 0 !important;
     width: 100% !important;
+    height: 234px;
 }
 #content .wp-pagenavi span.pages {
     float: left;

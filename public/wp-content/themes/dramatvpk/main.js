@@ -188,12 +188,15 @@ jQuery(document).ready(function($) {
     }            if (jQuery('#responsive-menu-button').css('display') != 'none') {
     $('#responsive-menu-button,#responsive-menu a.responsive-menu-item-link, #responsive-menu-wrapper input').focus( function() {
     $(this).addClass('is-active');
+    $('#rmp-container-346197').addClass('rmp-menu-open');
+    
     $('html').addClass('responsive-menu-open');
     $('#responsive-menu li').css({"opacity": "1", "margin-left": "0"});
     });
     $('#responsive-menu-button, a.responsive-menu-item-link,#responsive-menu-wrapper input').focusout( function() {
     if ( $(this).last('#responsive-menu-button a.responsive-menu-item-link') ) {
     $(this).removeClass('is-active');
+    //$('#rmp-container-346197').removeClass('rmp-menu-open2');
     $('html').removeClass('responsive-menu-open');
     }
     });
