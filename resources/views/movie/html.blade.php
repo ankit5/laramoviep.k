@@ -48,6 +48,15 @@ $meta['image'] = str_replace('https://www.watch-movies.com.pk','http://localhost
 <link rel="shortlink" href="{{ $meta['url'] }}" />
 <link rel="stylesheet" href="{{ asset('wp-content/themes/dramatvpk/main.css') }}?{{ $rand }}" type="text/css" media="screen" />
 <script src="{{ asset('wp-content/themes/dramatvpk/main.js') }}?{{ $rand }}" type="text/javascript"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6B00N39GNM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6B00N39GNM');
+</script>
 @yield('head')
 </head>
 <body class="home page-template page-template-page-templates page-template-front-page page-template-page-templatesfront-page-php page page-id-341159 responsive-menu-slide-left">
