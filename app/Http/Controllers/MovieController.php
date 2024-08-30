@@ -123,7 +123,7 @@ class MovieController extends Controller {
 
     public function show($url=''){
 
-        $url = str_replace("-download-full-movie-and-wacth-online","",$url);
+        $url = str_replace("-watch-online-hd-quality-free-download","",$url);
         
         $movie = Http::withBasicAuth(config('services.basic_auth.user'), config('services.basic_auth.pwd'))
         ->get(config('services.basic_auth.api_url').'api/movie?alias=/'.$url)
