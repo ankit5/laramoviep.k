@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\MovieController' => $baseDir . '/app/Http/Controllers/MovieController.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -4860,6 +4861,10 @@ return array(
     'SebastianBergmann\\Type\\UnknownType' => $vendorDir . '/sebastian/type/src/type/UnknownType.php',
     'SebastianBergmann\\Type\\VoidType' => $vendorDir . '/sebastian/type/src/type/VoidType.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
+    'Silber\\PageCache\\Cache' => $vendorDir . '/silber/page-cache/src/Cache.php',
+    'Silber\\PageCache\\Console\\ClearCache' => $vendorDir . '/silber/page-cache/src/Console/ClearCache.php',
+    'Silber\\PageCache\\LaravelServiceProvider' => $vendorDir . '/silber/page-cache/src/LaravelServiceProvider.php',
+    'Silber\\PageCache\\Middleware\\CacheResponse' => $vendorDir . '/silber/page-cache/src/Middleware/CacheResponse.php',
     'Stringable' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
     'Symfony\\Component\\Clock\\Clock' => $vendorDir . '/symfony/clock/Clock.php',
     'Symfony\\Component\\Clock\\ClockAwareTrait' => $vendorDir . '/symfony/clock/ClockAwareTrait.php',
