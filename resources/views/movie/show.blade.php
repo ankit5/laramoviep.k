@@ -51,7 +51,7 @@ $.post('/admin-ajax.php', {action: 'wpt_view_count', id: '413453'});
 $download_url = explode("|",$download_url);
 $download_name = explode("Link 1 ",$download_url[0]);
 $download_name = explode(" ",$download_name[1]);
-$download_url[1] = str_replace('https://embedpk.net/','pk/',$download_url[1]);
+$download_url[1] = str_replace('https://embedpk.net/','https://play.123hdmovies2.xyz/?id=pk/',$download_url[1]);
 @endphp
 // {{ $download_name[0]}}---------------------------------------</p>
 <h2 style="font-size: 12px !important;">{{ $download_name[1] }} Quality Links {{ $download_name[0] }}</h2><p>
