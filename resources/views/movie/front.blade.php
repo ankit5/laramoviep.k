@@ -1,12 +1,14 @@
 @extends('movie.html')
 @section('content')
 
+@if($featured)
 <h2 style="padding-top: 10px; background: none repeat scroll 0% 0% rgb(173, 23, 0); vertical-align: middle; padding-bottom: 10px; padding-left: 10px; width: 654px;" class="maintitle">Featured Movies</h2>
 @foreach ($featured as $movie)
     <x-movie-list :movie="$movie" />
 @endforeach
+@endif
 
-<h2 style="padding-top: 10px; background: none repeat scroll 0% 0% rgb(173, 23, 0); vertical-align: middle; padding-bottom: 10px; padding-left: 10px; width: 654px;" class="maintitle">Latest Movies</h2>
+<h2 style="padding-top: 10px; background: none repeat scroll 0% 0% rgb(173, 23, 0); vertical-align: middle; padding-bottom: 10px; padding-left: 10px; width: 654px;" class="maintitle">{{ $meta['title'] }}</h2>
 @foreach ($latest as $movie)
     <x-movie-list :movie="$movie" />
 @endforeach

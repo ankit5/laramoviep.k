@@ -38,10 +38,11 @@ class MovieController extends Controller {
         $next = ($page+1<$pager['total_pages'])?$pager['current_page']+2:'';
         $latest = isset($latest['results']) ? $latest['results'] : [];
         $featured = isset($featured['results']) ? $featured['results'] : [];
+        $featured = isset($_REQUEST['s'])?[]:$featured;
         $search_title = isset($_REQUEST['s'])?$_REQUEST['s'].' ':'';
         $most_view = isset($most_view['results']) ? $most_view['results'] : [];
         $meta['meta-title']=$search_title.'Watch Free Movies Online | HD Download Movies In DVD Print';
-        $meta['title']=($search_title)?'Search for '.$search_title:'Latest Featured Movies';
+        $meta['title']=($search_title)?'Video for '.$search_title:'Latest Movies';
         $meta['description']=$search_title.'Watch Free Movies Online in HD Print Quality Download,Watch Free Full Movies Online Bollywood Movies Download Latest Hollywood Movies in DVD Print Hd Quality Free.';
         $meta['og-title']=$search_title.'Watch Free Movies Online |HD Download Movies In DVD Print';
         $meta['canonical']=URL::to('');
