@@ -188,8 +188,7 @@ jQuery(document).ready(function($) {
     }            if (jQuery('#responsive-menu-button').css('display') != 'none') {
     $('#responsive-menu-button,#responsive-menu a.responsive-menu-item-link, #responsive-menu-wrapper input').focus( function() {
     $(this).addClass('is-active');
-    $('#rmp-container-346197').addClass('rmp-menu-open');
-    
+    $('#rmp-container-346197').addClass('rmp-menu-open');    
     $('html').addClass('responsive-menu-open');
     $('#responsive-menu li').css({"opacity": "1", "margin-left": "0"});
     });
