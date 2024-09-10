@@ -188,18 +188,19 @@ jQuery(document).ready(function($) {
     }            if (jQuery('#responsive-menu-button').css('display') != 'none') {
     $('#responsive-menu-button,#responsive-menu a.responsive-menu-item-link, #responsive-menu-wrapper input').focus( function() {
     $(this).addClass('is-active');
-    $('#rmp-container-346197').addClass('rmp-menu-open');    
+    //$('#rmp-container-346197').addClass('rmp-menu-open');    
     $('html').addClass('responsive-menu-open');
     $('#responsive-menu li').css({"opacity": "1", "margin-left": "0"});
     });
     $('#responsive-menu-button, a.responsive-menu-item-link,#responsive-menu-wrapper input').focusout( function() {
     if ( $(this).last('#responsive-menu-button a.responsive-menu-item-link') ) {
     $(this).removeClass('is-active');
-    //$('#rmp-container-346197').removeClass('rmp-menu-open2');
+    
     $('html').removeClass('responsive-menu-open');
     }
     });
-    }            $('#responsive-menu a.responsive-menu-item-link').keydown(function(event) {
+    }
+    $('#responsive-menu a.responsive-menu-item-link').keydown(function(event) {
     console.log( event.keyCode );
     if ( [13,27,32,35,36,37,38,39,40].indexOf( event.keyCode) == -1) {
     return;
