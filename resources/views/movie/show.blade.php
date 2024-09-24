@@ -66,7 +66,7 @@ $download_url[1] = str_replace('https://embedpk.net/','https://play.123hdmovies2
 
 $movie['field_genre'] = str_replace('hreflang="en"','hreflang="en" itemprop="genre" ',$movie['field_genre']);
 $add_date = date("M d, Y", $movie['field_publushdate']);
-$movie['field_image_urls'] = str_replace('https://www.watch-movies.com.pk','https://img.123hdmovies2.xyz',$movie['field_image_urls']);
+$movie['field_image_urls'] = str_replace('https://www.watch-movies.com.pk','https://img.watch-download.shop',$movie['field_image_urls']);
 @endphp
 <p> Genres : {!! html_entity_decode($movie['field_genre']) !!} </p>
 <p><strong>Added on : </strong><span class="">{{ $add_date }}</span></p>

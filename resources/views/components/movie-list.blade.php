@@ -1,5 +1,5 @@
 @php
-$movie['field_image_urls'] = str_replace('https://www.watch-movies.com.pk','https://img.123hdmovies2.xyz',$movie['field_image_urls']);
+$movie['field_image_urls'] = str_replace('https://www.watch-movies.com.pk','https://img.watch-download.shop',$movie['field_image_urls']);
 if(@$movie['field_publushdate']){
 $year = date("Y", $movie['field_publushdate']);
 }
