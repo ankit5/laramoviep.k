@@ -4,7 +4,7 @@
 </div><div id="block-5" class="widget_block"><div class="popular-posts"><h2>This Week Most Viewed Movies</h2><ul class="wpp-list wpp-list-with-thumbnails">
 @foreach ($most_view as $movie)
 @php
-$movie['field_image_urls'] = str_replace('https://www.watch-movies.com.pk','https://img.123hdmovies2.xyz',$movie['field_image_urls']);
+$movie['field_image_urls'] = str_replace('https://www.watch-movies.com.pk','https://img.watch-download.shop',$movie['field_image_urls']);
 $year = date("Y", $movie['field_publushdate']);
 @endphp
 <li>
